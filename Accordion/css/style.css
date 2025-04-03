@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fc; /* Light pastel background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .accordion {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Space between items */
+  .accordion-item {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Question Styling */
+  .accordion-header {
+    width: 100%;
+    background-color: #4a90e2; /* Professional Blue */
+    color: white;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .accordion-header:hover {
+    background-color: #357ABD;
+  }
+  
+  /* Answer Styling */
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #eef5ff; /* Soft pastel blue */
+    color: #333;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    padding: 0 1rem;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  /* Active state (open answer) */
+  .accordion-content.active {
+    padding: 1rem;
+    max-height: 200px;
+  }
+  
